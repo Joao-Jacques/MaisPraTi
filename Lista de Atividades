@@ -1,0 +1,46 @@
+# Lista de Atividades
+
+Este repositório contém uma lista de atividades de programação em JavaScript, voltadas para o aprendizado de lógica e estruturas básicas de controle.
+
+## Como executar
+
+1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
+2. Instale o pacote `prompt-sync` para entrada de dados via terminal:
+   ```
+   npm install prompt-sync
+   ```
+3. Execute o arquivo desejado usando o comando:
+   ```
+   node nome_do_arquivo.js
+   ```
+   Exemplo:
+   ```
+   node atividade_1.js
+   ```
+
+## Atividades
+
+Cada arquivo corresponde a uma atividade diferente:
+
+- **atividade_1.js**: Verifica se um número é par ou ímpar.
+- **atividade_2.js**: Classifica a idade em categorias.
+- **atividade_3.js**: Classifica uma nota como aprovado, recuperação ou reprovado.
+- **atividade_4.js**: Menu interativo com operações matemáticas.
+- **atividade_5.js**: Calcula o IMC e classifica o peso.
+- **atividade_6.js**: Verifica o tipo de triângulo.
+- **atividade_7.js**: Calcula o valor da compra de maçãs.
+- **atividade_8.js**: Ordena dois valores em ordem crescente.
+- **atividade_9.js**: Contagem regressiva de 10 até 1.
+- **atividade_10.js**: Escreve um número na tela 10 vezes.
+- **atividade_11.js**: Soma 5 números fornecidos pelo usuário.
+- **atividade_12.js**: Exibe a tabuada de um número.
+- **atividade_13.js**: Calcula a média de números até digitar 0.
+- **atividade_14.js**: Calcula o fatorial de um número.
+- **atividade_15.js**: Imprime os 10 primeiros números da sequência de Fibonacci.
+
+## Observações
+
+- Todos os programas são executados via terminal e vários utilizam entrada de dados pelo usuário.
+- Os exercícios são voltados para iniciantes e têm como objetivo praticar lógica de programação.
+
+---
