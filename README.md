@@ -20,7 +20,9 @@ Este repositório contém uma lista de atividades de programação em JavaScript
 
 ## Atividades
 
-Cada arquivo corresponde a uma atividade diferente:
+Cada arquivo corresponde a uma atividade diferente. As atividades estão divididas em duas listas:
+
+### Lista de Atividades 1
 
 - **atividade_1.js**: Verifica se um número é par ou ímpar.
 - **atividade_2.js**: Classifica a idade em categorias.
@@ -38,9 +40,22 @@ Cada arquivo corresponde a uma atividade diferente:
 - **atividade_14.js**: Calcula o fatorial de um número.
 - **atividade_15.js**: Imprime os 10 primeiros números da sequência de Fibonacci.
 
+### Lista de Atividades 2
+
+- **atividade_1.js**: Filtra números pares de um array.
+- **atividade_2.js**: Soma todos os elementos de um array.
+- **atividade_3.js**: Encontra o maior valor em um array.
+- **atividade_4.js**: Conta quantos elementos são maiores que 10 em um array.
+- **atividade_5.js**: Cria um novo array com o quadrado de cada elemento.
+- **atividade_6.js**: Filtra objetos com propriedade específica.
+- **atividade_7.js**: Mapeia e ordena nomes de produtos por preço crescente.
+- **atividade_8.js**: Agrupa elementos iguais de um array.
+- **atividade_9.js**: Conversão entre array de pares e objeto, e vice-versa.
+
 ## Observações
 
 - Todos os programas são executados via terminal e vários utilizam entrada de dados pelo usuário.
 - Os exercícios são voltados para iniciantes e têm como objetivo praticar lógica de programação.
-
 ---
+
+## Desenvolvido por João Jacques
