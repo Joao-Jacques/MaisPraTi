@@ -20,25 +20,7 @@ Este repositório contém uma lista de atividades de programação em JavaScript
 
 ## Atividades
 
-Cada arquivo corresponde a uma atividade diferente. As atividades estão divididas em duas listas:
-
-### Lista de Atividades 1
-
-- **atividade_1.js**: Verifica se um número é par ou ímpar.
-- **atividade_2.js**: Classifica a idade em categorias.
-- **atividade_3.js**: Classifica uma nota como aprovado, recuperação ou reprovado.
-- **atividade_4.js**: Menu interativo com operações matemáticas.
-- **atividade_5.js**: Calcula o IMC e classifica o peso.
-- **atividade_6.js**: Verifica o tipo de triângulo.
-- **atividade_7.js**: Calcula o valor da compra de maçãs.
-- **atividade_8.js**: Ordena dois valores em ordem crescente.
-- **atividade_9.js**: Contagem regressiva de 10 até 1.
-- **atividade_10.js**: Escreve um número na tela 10 vezes.
-- **atividade_11.js**: Soma 5 números fornecidos pelo usuário.
-- **atividade_12.js**: Exibe a tabuada de um número.
-- **atividade_13.js**: Calcula a média de números até digitar 0.
-- **atividade_14.js**: Calcula o fatorial de um número.
-- **atividade_15.js**: Imprime os 10 primeiros números da sequência de Fibonacci.
+Cada arquivo corresponde a uma atividade diferente. As atividades estão divididas em uma pasta chamada "lista-atividades-2".
 
 ### Lista de Atividades 2
 
