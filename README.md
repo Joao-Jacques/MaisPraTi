@@ -5,9 +5,9 @@ Este repositório contém uma lista de atividades de programação em JavaScript
 ## Como executar
 
 1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
-2. Instale o pacote `prompt-sync` para entrada de dados via terminal:
+2. Instale os pacotes contidos no package.json `zod` e `prompt-sync` para entrada de dados via terminal:
    ```
-   npm install prompt-sync
+   npm install 
    ```
 3. Execute o arquivo desejado usando o comando:
    ```

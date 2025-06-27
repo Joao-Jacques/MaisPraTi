@@ -1,0 +1,25 @@
+{
+  "name": "maisprati",
+  "version": "1.0.0",
+  "description": "Este repositório contém uma lista de atividades de programação em JavaScript, voltadas para o aprendizado de lógica e estruturas básicas de controle.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-Jacques/MaisPraTi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Joao-Jacques/MaisPraTi/issues"
+  },
+  "homepage": "https://github.com/Joao-Jacques/MaisPraTi#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "zod": "^3.25.67"
+  }
+}
