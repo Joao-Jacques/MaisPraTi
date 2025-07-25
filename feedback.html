@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Pra Ti - Formulário de Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Feedback</h1>
+        <p>Por favor, preencha o formulário abaixo:</p>
+    </header>
+    <nav class="footer-nav" id="footerNav">
+        <a href="index.html">Home</a>
+        <a href="grid.html">Grid</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="listas.html">Hobbies e Receitas</a>
+    </nav>
+    <div class="hamburger" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <main>
+        <form id="feedbackForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="endereco">Endereço Completo:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="tipo_feedback">Tipo de Feedback:</label>
+            <select id="tipo_feedback" name="tipo_feedback" required>
+                <option value="elogio">Elogio</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+            </select>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Enviar Feedback</button>
+        </form>
+        <div id="popupSucesso" style="display:none;position:fixed;top:30%;left:50%;transform:translate(-50%,-50%);background:#e0ffe0;border:2px solid #2a7ae4;padding:24px 32px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.12);z-index:999;font-size:1.2rem;">
+            Feedback enviado com sucesso!
+        </div>
+    </main>
+<script>
+document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('popupSucesso').style.display = 'block';
+    setTimeout(function() {
+        document.getElementById('popupSucesso').style.display = 'none';
+        document.getElementById('feedbackForm').reset();
+    }, 2000);
+});
+</script>
+</body>
+    <footer>
+        <p>&copy; 2025 Mais Pra Ti. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+    const hamburger = document.getElementById('hamburgerMenu');
+    const nav = document.getElementById('footerNav');
+    function toggleMenu() {
+        nav.classList.toggle('open');
+        if (nav.classList.contains('open')) {
+            nav.style.display = 'flex';
+        } else {
+            nav.style.display = 'none';
+        }
+    }
+    hamburger.addEventListener('click', toggleMenu);
+    function handleResize() {
+        if (window.innerWidth <= 600) {
+            nav.style.display = 'none';
+            hamburger.style.display = 'flex';
+            nav.classList.remove('open');
+        } else {
+            nav.style.display = 'flex';
+            hamburger.style.display = 'none';
+            nav.classList.remove('open');
+        }
+    }
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('DOMContentLoaded', handleResize);
+    </script>
+    </footer>   
+</html>

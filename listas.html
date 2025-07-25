@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Pra Ti - Listas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Listas e Navegação</h1>
+        <p>Explore nossos hobbies e receitas!</p>
+    </header>
+    <main>
+        <section id="hobbies">
+            <h2>Meus Hobbies</h2>
+            <ul>
+                <li>Jogar Video Game</li>
+                <li>Academia</li>
+                <li>Cozinhar</li>
+                <li>Mecânica automotiva</li>
+                <li>Puzzles</li>
+            </ul>
+        </section>
+        <section id="receita">
+            <h2>Como Preparar Panquecas Deliciosas</h2>
+            <ol>
+                <li>Separe os ingredientes</li>
+                    <ul>
+                        <li>1 xícara (chá) de farinha de trigo</li>
+                        <li>1 colher (sopa) de açúcar</li>
+                        <li>1 pitada de sal</li>
+                        <li>1 ovo</li>
+                        <li>1 xícara (chá) de leite</li>
+                        <li>Manteiga ou óleo para untar a forma</li>
+                    </ul>
+                <li>Em uma tigela, peneire a farinha, o açúcar e o sal.</li>
+                <li>Faça um “buraco” no centro e quebre o ovo ali. Acrescente o leite aos poucos, mexendo com um fouet ou garfo até obter uma massa lisa e sem grumos.</li>
+                <li>Se a massa ficar muito espessa, adicione um pouco mais de leite; se ficar muito líquida, acrescente um pouquinho de farinha.</li>
+                <li>Leve uma frigideira antiaderente ao fogo médio e unte levemente com manteiga ou óleo.</li>
+                <li>Coloque aproximadamente ¼ de xícara de massa no centro da frigideira e gire-a para espalhar.</li>
+                <li>Deixe até aparecerem bolhas na superfície (cerca de 1-2 minutos).</li>
+                <li>Com uma espátula, vire com cuidado e cozinhe por mais 1 minuto ou até dourar.</li>
+                <li>Repita o processo com o restante da massa, untando a frigideira conforme necessário.</li>
+                <li>Está pronta suas Panquecas, você pode servir as panquecas quentes, com mel, geleia, frutas ou o que preferir.</li>
+            </ol>
+        </section>
+    </main>
+</body>
+    </main>
+    <nav class="footer-nav" id="footerNav">
+        <a href="index.html">Home</a>
+        <a href="grid.html">Grid</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="listas.html">Hobbies e Receitas</a>
+    </nav>
+    <div class="hamburger" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <footer>
+        <p>&copy; 2023 Mais Pra Ti. Todos os direitos reservados.</p>
+        <script>
+        const hamburger = document.getElementById('hamburgerMenu');
+        const nav = document.getElementById('footerNav');
+        function toggleMenu() {
+            nav.classList.toggle('open');
+            if (nav.classList.contains('open')) {
+                nav.style.display = 'flex';
+            } else {
+                nav.style.display = 'none';
+            }
+        }
+        hamburger.addEventListener('click', toggleMenu);
+        function handleResize() {
+            if (window.innerWidth <= 600) {
+                nav.style.display = 'none';
+                hamburger.style.display = 'flex';
+                nav.classList.remove('open');
+            } else {
+                nav.style.display = 'flex';
+                hamburger.style.display = 'none';
+                nav.classList.remove('open');
+            }
+        }
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('DOMContentLoaded', handleResize);
+        </script>
+    </footer>
+</html>

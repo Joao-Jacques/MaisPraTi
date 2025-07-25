@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Pra Ti - Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="importante">Bem-vindo</h1>
+        <p>Esse espaço foi dedicado ao aprendizado e prática através da lista de exercícios 3.</p>
+    </header>
+    <nav class="footer-nav" id="footerNav">
+        <a href="index.html">Home</a>
+        <a href="grid.html">Grid</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="listas.html">Hobbies e Receitas</a>
+    </nav>
+    <div class="hamburger" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <main>
+        <section id="missao">
+            <h2>Missão</h2>
+            <p>Aprender mais sobre HTML, CSS e JavaScript.</p>
+        </section>
+        <section id="visao">
+            <h2>Visão</h2>
+            <p>Se tornar um profissional de destaque em desenvolvimento web.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mais Pra Ti. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+    const hamburger = document.getElementById('hamburgerMenu');
+    const nav = document.getElementById('footerNav');
+    function toggleMenu() {
+        nav.classList.toggle('open');
+        if (nav.classList.contains('open')) {
+            nav.style.display = 'flex';
+        } else {
+            nav.style.display = 'none';
+        }
+    }
+    hamburger.addEventListener('click', toggleMenu);
+    function handleResize() {
+        if (window.innerWidth <= 600) {
+            nav.style.display = 'none';
+            hamburger.style.display = 'flex';
+            nav.classList.remove('open');
+        } else {
+            nav.style.display = 'flex';
+            hamburger.style.display = 'none';
+            nav.classList.remove('open');
+        }
+    }
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('DOMContentLoaded', handleResize);
+    </script>
+</body>
+</html>

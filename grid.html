@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Pra Ti - Galeria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2 class="destaque">Galeria de carros anos 2000</h2>
+        <p>Explore essa breve galeria de imagens de carros dos anos 2000.</p>
+    </header>
+    <nav class="footer-nav" id="footerNav">
+        <a href="index.html">Home</a>
+        <a href="grid.html">Grid</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="listas.html">Hobbies e Receitas</a>
+    </nav>
+    <div class="hamburger" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <main>
+        <div class="galeria-container">
+            <div class="galeria">
+                <figure>
+                    <img class="car-img" src="public/306.jpg" alt="Pegeout 306" width="240" height="240">
+                    <figcaption>Pegeout 306</figcaption>
+                </figure>
+                <figure>
+                    <img class="car-img" src="public/accord.jpg" alt="Honda Accord" width="240" height="240">
+                    <figcaption>Honda Accord</figcaption>
+                </figure>
+                <figure>
+                    <img class="car-img" src="public/astra.jpg" alt="Chevrolet Astra" width="240" height="240">
+                    <figcaption>Chevrolet Astra</figcaption>
+                </figure>
+                <figure>
+                    <img class="car-img" src="public/corolla.jpg" alt="Toyota Corolla" width="240" height="240">
+                    <figcaption>Toyota Corolla</figcaption>
+                </figure>
+                <figure>
+                    <img class="car-img" src="public/passat.jpg" alt="Volkswagen Passat" width="240" height="240">
+                    <figcaption>Volkswagen Passat</figcaption>
+                </figure>
+                <figure>
+                    <img class="car-img" src="public/civic.jpg" alt="Honda Civic" width="240" height="240">
+                    <figcaption>Honda Civic</figcaption>
+                </figure>
+                <figure>
+                    <img class="car-img" src="public/camry.jpg" alt="Toyota Camry" width="240" height="240">
+                    <figcaption>Toyota Camry</figcaption>
+                </figure>
+                <figure>
+                    <img class="car-img" src="public/vectra.jpg" alt="Chevrolet Vectra" width="240" height="240">
+                    <figcaption>Chevrolet Vectra</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mais Pra Ti. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+    const hamburger = document.getElementById('hamburgerMenu');
+    const nav = document.getElementById('footerNav');
+    function toggleMenu() {
+        nav.classList.toggle('open');
+        if (nav.classList.contains('open')) {
+            nav.style.display = 'flex';
+        } else {
+            nav.style.display = 'none';
+        }
+    }
+    hamburger.addEventListener('click', toggleMenu);
+    function handleResize() {
+        if (window.innerWidth <= 600) {
+            nav.style.display = 'none';
+            hamburger.style.display = 'flex';
+            nav.classList.remove('open');
+        } else {
+            nav.style.display = 'flex';
+            hamburger.style.display = 'none';
+            nav.classList.remove('open');
+        }
+    }
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('DOMContentLoaded', handleResize);
+    </script>
+</body>
+</html>
