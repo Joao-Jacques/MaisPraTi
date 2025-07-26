@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Portifólio de João Jacques, desenvolvedor full-stack" />
+    <meta name="author" content="João Jacques" />
+    <meta property="og:description" content="Portifólio de João Jacques, desenvolvedor web Front-end" />
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="developer, programação, dev, desenvolvedor, programador, html, css, javascript, nodejs, reactjs, react, github, frontend, front-end" />
+    <meta name="robots" content="index" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gemunu+Libre:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="./assets/js/main.js" defer></script>
+
+    <title>João Jacques // Portifólio</title>
+  </head>
+  <body>
+    <nav id="navigation">
+       <div id="toggle">
+      <input type="checkbox" id="sw-checkbox" />
+      <label for="sw-checkbox" title="Mudar tema">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+        >
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+        >
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"
+            fill="rgba(255,255,255,1)"
+          />
+        </svg>
+      </label>
+    </div>
+      <div class="wrapper">
+        
+        <a class="logo close" href="#home"> joão jacques </a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a id="aboutNav" class="close" href="#about">Sobre mim</a>
+            </li>
+            <li>
+              <a id="projectsNav" class="close" href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a id="knowledgeNav" class="close" href="#knowledge"
+                >Conhecimentos</a
+              >
+            </li>
+            <li>
+              <a id="contactNav" class="close" href="#contact">Fale comigo</a>
+            </li>
+          </ul>
+
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://github.com/joao-jacques"
+                title="Github"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"
+                    fill="rgba(255,255,255,1)"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/dev-joaojacques/"
+                title="LinkedIn"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                    fill="rgba(255,255,255,1)"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="open-menu open"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          class="close-menu close"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+          
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h4>Portifólio</h4>
+            <h1>Eu sou João Jacques,</h1>
+          </header>
+          <div class="content">
+            <p class="line typing">Desenvolvedor Full-Stack</p>
+            <a class="button" href="#contact"> Fale comigo </a>
+          </div>
+        </div>
+        <div class="col-b">
+          <img
+            src="./assets/images/foto_jacques.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+        <div class="col-a">
+          <header>
+            <h2>Sobre mim</h2>
+          </header>
+          <div class="content">
+            <div class="about-card">
+            <p>
+              Me chamo João Jacques, graduando em Análise e Desenvolvimento de Sistemas
+              na PUCRS. Desenvolvo aplicações e sistemas web responsívos e de layout atrativo. Tenho uma trajetória de cerca de 3 anos
+              trabalhando com tecnologia e desenvolvimento de sistemas, o
+              que me tornou um profissional dedicado e organizado. Hoje na área de desenvolvimento vivo o aprendizado continuo, focando em tecnologias JavaScript. Busco oportunidades no mercado como dev para colaborar no desenvolvimento de soluções inovadoras.
+            </p>
+          </div>
+</div>
+      </div>
+    </section>
+
+    <section id="experiencia-certificados">
+      <div class="wrapper">
+        <header>
+          <h2>Experiência</h2>
+        </header>
+        <div class="exp-list">
+          <div class="exp-card">
+            <div class="exp-card-content">
+              <h3>Profissão</h3>
+              <h4>2022-momento</h4>
+              <p>Atualmente atuo como desenvolvedor full-stack na WeConecta, lá adquiri boa experiência em projetos reais, integração de sistemas, trabalho em equipe multidisciplinar e bastante foco em desenvolvimento web.</p>
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-content">
+              <h3>Faculdade</h3>
+              <h4>2024-2027</h4>
+              <p>Graduando em Análise e Desenvolvimento de Sistemas na PUCRS, com previsão de conclusão em 2027. Formação sólida em lógica, programação e desenvolvimento de sistemas.</p>
+            </div>
+          </div>
+          <header>
+          <h2>Certificados</h2>
+        </header>
+          <div class="exp-card">
+            <div class="exp-card-content">
+              <h3>Especialização em Python</h3>
+              <p>Possuo um certificado de Especialização em Python promovido pela universidade de Michigan, onde aprofundei meus conhecimentos na linguagem e suas aplicações em desenvolvimento web.</p>
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-content">
+              <h3>Certificação Rocketseat</h3>
+              <p>Participei de diversos cursos e imersões promovidos pela Rocketseat, onde aprofundei meus conhecimentos em JavaScript, React e Node.js.</p>
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-content">
+              <h3>Curso +PraTi</h3>
+              <p>Fui aprovado como aluno do programa +PraTi, reconhecido pela qualidade e foco em empregabilidade, onde aprofundei conhecimentos práticos em desenvolvimento, metodologias ágeis e projetos colaborativos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="wrapper">
+        <header>
+          <h2>Projetos</h2>
+        </header>
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <h3>Card de Saúde</h3>
+              <div class="img-wrapper">
+                <img
+                  src="./assets/images/card.png"
+                  alt="imagem card"
+                />
+                <div class="buttons">
+                  <a href="https://weconecta-card-dev.web.app/cardview?tk=gAAAAABoRuabWad1MKk52DKRZ7LBX7D7tBusAboSMmBwQLwQs-31O1aF9h-tASN8DdsE0GJid2D4apw6GhhPoQeDt2GDuD2nXg==" target="_blank" title="Ver Projeto">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path d="M12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9C2.121 6.88 6.608 3 12 3zm0 16a9.005 9.005 0 0 0 8.777-7 9.005 9.005 0 0 0-17.554 0A9.005 9.005 0 0 0 12 19zm0-2.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p>Card de saúde criado para orientações e informações sobre saúde.</p>
+              <p>TypeScript - Next.js - Deploy AWS - Banco BigQuery</p>
+            </div>
+            <div class="card">
+              <h3>Jogo de terminal</h3>
+              <div class="img-wrapper">
+                <img
+                  src="./assets/images/terminal.png"
+                  alt="Imagem tema do projeto de desafio de código."
+                />
+                <div class="buttons">
+                  <a href="https://github.com/Joao-Jacques/pucrs-oop-project" target="_blank" title="Repositório no Github">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z" fill="rgba(255,255,255,1)"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p>Projeto da faculdade com objetivo de praticar a lógica e a programação.</p>
+              <p>JavaScript</p>
+            </div>
+            <div class="card">
+              <h3>Aplicação para recomendação / fidelidade</h3>
+              <div class="img-wrapper">
+                <img
+                  src="./assets/images/nextindica.png"
+                  alt="Imagem tema do projeto de desafio de código."
+                />
+                <div class="buttons">
+                  <a href="https://github.com/Joao-Jacques/Next-Indica" target="_blank" title="Repositório no Github">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z" fill="rgba(255,255,255,1)"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p>Projeto criado em uma imersão na Rocketseat.</p>
+              <p>Next.js, TypeScript, Postgress, SQL, Prisma, Tailwind CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="softskills">
+      <div class="wrapper">
+        <header>
+          <h2>Softskills</h2>
+        </header>
+        <div class="content">
+          <p>Comunicação clara, trabalho em equipe, resiliência e adaptabilidade são habilidades que desenvolvi ao longo da minha trajetória. Tenho facilidade para aprender, compartilhar conhecimento e lidar com desafios de forma colaborativa.</p>
+          <p>Sou proativo, organizado e busco sempre contribuir para um ambiente positivo e produtivo, valorizando a diversidade de ideias e o crescimento conjunto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="knowledge">
+      <div class="wrapper">
+        <header>
+          <h2>Tecnologias</h2>
+        </header>
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/images/react.png" alt="Ícone do React." />
+              <div class="content">
+                <h3>REACT</h3>
+                <p>
+                  React é uma biblioteca JavaScript para construir interfaces de usuário.
+                  Ela permite criar componentes reutilizáveis e gerenciar o estado da aplicação de forma eficiente.
+                </p>
+              </div>
+            </div>
+             <div class="card">
+              <img src="./assets/images/next.png" alt="Ícone do Next.js." />
+              <div class="content">
+                <h3>NEXT.JS</h3>
+                <p>
+                  Next.js é um framework React para construção de aplicações web.
+                  Ele oferece recursos como renderização do lado do servidor e geração de sites estáticos.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/images/python.png" alt="Ícone do Python." />
+              <div class="content">
+                <h3>Python</h3>
+                <p>
+                  Python é uma linguagem de programação de alto nível, amplamente utilizada
+                  para desenvolvimento web, automação, análise de dados e inteligência artificial.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/images/sql.png" alt="Ícone do SQL." />
+              <div class="content">
+                <h3>SQL</h3>
+                <p>
+                  SQL (Structured Query Language) é uma linguagem de programação
+                  usada para gerenciar e manipular bancos de dados relacionais.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/images/awsb.png" alt="Ícone do AWS." class="tech-img aws-img" data-img-dark="./assets/images/awsw.png" data-img-light="./assets/images/awsb.png" />
+              <div class="content">
+                <h3>AWS</h3>
+                <p>
+                  AWS (Amazon Web Services) é uma plataforma de serviços em nuvem
+                  que oferece uma ampla gama de serviços, incluindo computação,
+                  armazenamento e bancos de dados.
+                </p>
+              </div>
+            </div>
+             <div class="card">
+              <img src="./assets/images/gitb.png" alt="Ícone do GitHub." class="tech-img github-img" data-img-dark="./assets/images/gitw.png" data-img-light="./assets/images/gitb.png" />
+              <div class="content">
+                <h3>Github</h3>
+                <p>
+                  GitHub é uma plataforma de hospedagem de código-fonte e controle de versão
+                  usando o Git. É amplamente utilizada para colaboração em projetos de software.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/images/html.png" alt="Ícone do HTML5." />
+              <div class="content">
+                <h3>HTML5</h3>
+                <p>
+                  HTML5 é uma linguagem de marcação de hipertexto, que usamos para
+                  marcar os elementos da página e construí-la.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/images/css3.png" alt="Ícone do CSS3." />
+              <div class="content">
+                <h3>CSS3</h3>
+                <p>
+                  CSS3 é uma linguagem de estilo usada para descrever a
+                  apresentação dos elementos da página os estilizando.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/images/javascript.png" alt="Ícone do Javascript." />
+
+              <h3>JavaScript</h3>
+              <p>
+                JavaScript é uma linguagem de programação interpretada usada no
+                desenvolvimento web para descrever funcionalidades e
+                comportamentos da página.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper contact-wrapper">
+        <header class="contact-header">
+          <h2>Entre em contato</h2>
+        </header>
+        <div class="content contact-content">
+          <form class="contact-form">
+            <div class="contact-field">
+              <label for="nome">Nome:</label><br>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="contact-field">
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="contact-field">
+              <label for="mensagem">Mensagem:</label><br>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="button">Enviar</button>
+          </form>
+          <div class="contact-info">
+            <p>
+              <strong>Email:</strong> <a href="mailto:jjacques.amann@gmail.com">jjacques.amann@gmail.com</a>
+            </p>
+            <p>
+              <strong>Telefone:</strong> <a href="tel:+5551993097348">(51) 99309-7348</a>
+            </p>
+          </div>
+        </div>
+    <a id="backToTopButton" title="Voltar ao topo" href="#home">
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="20" cy="20" r="20" fill="#00856F" />
+        <path
+          d="M20 27V13"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13 20L20 13L27 20"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a class="logo" href="#home"> João Jacques </a>
+
+          <p>
+            Desenvolvido por João Jacques.
+          </p>
+        </div>
+    </footer>
+  </body>
+</html>
