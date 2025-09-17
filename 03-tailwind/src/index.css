@@ -1,27 +1,7 @@
-/* Skip link (acessibilidade) */
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  z-index: 200;
-}
-.skip-link:focus {
-  left: 1rem;
-  top: 1rem;
-  width: auto;
-  height: auto;
-  background: var(--color-primary);
-  color: #fff;
-  padding: 0.5em 1em;
-  border-radius: var(--radius-md);
-  outline: 2px solid var(--color-focus);
-  box-shadow: var(--shadow-xs);
-}
-
-/* TOKENS DE DESIGN */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Tokens devem ser globais */
 :root {
   --color-bg: #f8f9fa;
   --color-text: #222;
@@ -51,7 +31,6 @@
   --space-lg: 2rem;
 }
 
-/* CSS base (global) */
 body {
   margin: 0;
   font-family: system-ui, sans-serif;

@@ -20,14 +20,21 @@ export default function App() {
   }, []);
 
   return (
-    <div>
+    <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
       <Navbar />
-      <main className="main-content">
-        <h1 className="visually-hidden">Produtos em destaque</h1>
-        <section className="product-grid" aria-label="Lista de produtos">
+      <main className="pt-14">
+        <h1 className="sr-only">Produtos em destaque</h1>
+        <section
+          className="grid gap-8 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          aria-label="Lista de produtos"
+        >
           {loading
             ? Array.from({ length: 6 }).map((_, i) => (
-                <div className="product-skeleton" key={i} aria-hidden="true" />
+                <div
+                  className="aspect-[1/1.2] rounded-xl bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-pulse shadow-md"
+                  key={i}
+                  aria-hidden="true"
+                />
               ))
             : PRODUCTS.map((p) => <ProductCard key={p.id} product={p} />)}
         </section>

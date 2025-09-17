@@ -17,37 +17,37 @@ export default function ProductCard({ product }) {
 
   return (
     <article
-      className={`product-card${loading ? ' loading' : ''}${added ? ' added' : ''}`}
+      className={`bg-white rounded-xl shadow-sm flex flex-col overflow-hidden transition-all outline-none min-w-0 ${loading ? 'opacity-70 pointer-events-none' : ''} ${added ? 'animate-pulse' : ''}`}
       tabIndex={0}
       aria-label={product.title}
       aria-describedby={`desc-${product.id}`}
       role="region"
     >
-      <div className="product-card__img-wrapper">
+      <div className="relative aspect-square bg-gray-200 flex items-center justify-center overflow-hidden">
         <img
           src={product.image}
           alt={product.title}
           loading="lazy"
-          className="product-card__img"
+          className="w-full h-full object-cover transition-opacity"
           style={{ opacity: loading ? 0.5 : 1 }}
         />
         {product.tag && (
           <span
-            className={`product-card__tag product-card__tag--${product.tag === 'Promo' ? 'promo' : 'novo'}`}
+            className={`absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full shadow ${product.tag === 'Promo' ? 'bg-pink-600 text-white' : 'bg-green-600 text-white'}`}
             aria-label={product.tag === 'Promo' ? 'Produto em promoção' : 'Produto novo'}
           >
             {product.tag}
           </span>
         )}
       </div>
-      <div className="product-card__body" id={`desc-${product.id}`}>
-        <h2 className="product-card__title" title={product.title}>{product.title}</h2>
-        <div className="product-card__price-rating">
-          <span className="product-card__price">R$ {product.price.toFixed(2)}</span>
-          <span className="product-card__rating" aria-label={`Nota ${product.rating}`}>★ {product.rating}</span>
+      <div className="flex flex-col gap-2 p-4" id={`desc-${product.id}`}>
+        <h2 className="text-base font-semibold mb-1 truncate" title={product.title}>{product.title}</h2>
+        <div className="flex items-center justify-between gap-2">
+          <span className="text-blue-700 font-bold text-lg">R$ {product.price.toFixed(2)}</span>
+          <span className="text-yellow-500 font-medium text-base" aria-label={`Nota ${product.rating}`}>★ {product.rating}</span>
         </div>
         <button
-          className={`product-card__btn${added ? ' product-card__btn--added' : ''}`}
+          className={`mt-2 px-5 py-2 rounded-md border-2 border-blue-600 bg-blue-600 text-white font-semibold text-base shadow hover:bg-blue-700 hover:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-blue-300 disabled:border-blue-300 disabled:cursor-not-allowed ${added ? 'bg-green-600 border-green-600' : ''}`}
           onClick={handleAdd}
           disabled={loading || added}
           aria-busy={loading}
